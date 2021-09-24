@@ -1,0 +1,9 @@
+apiVersion: mygcp.jkwong.info/v1alpha1
+kind: BackendServiceBinding
+metadata:
+  name: nginxbinding
+spec:
+  serviceName: nginx-ingress-ingress-nginx-controller
+  gcpProject: 
+  maxRPS: 100
+  gcpBackendService: nginx-backend
